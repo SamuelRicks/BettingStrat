@@ -1,0 +1,34 @@
+/* Styles for desktop and larger screens */
+.nav-container {
+  margin-bottom: 2rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Media queries for mobile and tablets */
+@media (max-width: 768px) {
+  /* Adjust styles for tablets */
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust styles for mobile */
+  .nav-container {
+    margin-bottom: 1rem;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+}
